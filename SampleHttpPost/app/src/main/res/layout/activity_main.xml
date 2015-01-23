@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				xmlns:tools="http://schemas.android.com/tools"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/vd_background"
+				android:paddingBottom="@dimen/activity_vertical_margin"
+				android:paddingLeft="@dimen/activity_horizontal_margin"
+				android:paddingRight="@dimen/activity_horizontal_margin"
+				android:paddingTop="@dimen/activity_vertical_margin"
+				tools:context=".MainActivity">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical">
+
+		<TableLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:paddingBottom="16dp">
+
+			<TableRow android:id="@+id/tableRow1">
+
+				<TextView
+					style="@style/VdTextLight"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ellipsize="end"
+					android:singleLine="true"
+					android:text="Post URL:"/>
+
+				<EditText
+					android:id="@+id/txt_posturl"
+					style="@style/VdTextBlack"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:ems="16"
+					android:inputType="textNoSuggestions|textUri"
+					android:singleLine="true"/>
+			</TableRow>
+
+			<TableRow android:id="@+id/tableRow2">
+
+				<TextView
+					style="@style/VdTextLight"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ellipsize="end"
+					android:singleLine="true"
+					android:text="Post Key"/>
+
+				<EditText
+					android:id="@+id/txt_postkey"
+					style="@style/VdTextBlack"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:ems="16"
+					android:inputType="textNoSuggestions"
+					android:singleLine="true">
+				</EditText>
+			</TableRow>
+
+			<TableRow
+				android:id="@+id/tableRow3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+
+				<TextView
+					style="@style/VdTextLight"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:ellipsize="end"
+					android:singleLine="true"
+					android:text="Post Value:"/>
+
+				<EditText
+					android:id="@+id/txt_postval"
+					style="@style/VdTextBlack"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:ellipsize="end"
+					android:ems="16"
+					android:inputType="textNoSuggestions"
+					android:singleLine="true"/>
+			</TableRow>
+		</TableLayout>
+
+		<Button
+			android:id="@+id/btnPost"
+			style="@style/VdButtonBlue"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Post"/>
+
+		<TextView
+			style="@style/VdTextDark"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:ellipsize="end"
+			android:paddingTop="16dp"
+			android:singleLine="true"
+			android:text="Post Result"/>
+
+		<TextView
+			android:id="@+id/tvMessage"
+			style="@style/VdTextLight"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="n/a"/>
+
+	</LinearLayout>
+
+</RelativeLayout>

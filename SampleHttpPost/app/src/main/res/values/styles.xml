@@ -1,0 +1,8 @@
+<resources>
+
+	<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+		<item name="android:textViewStyle">@style/VdTextLight</item>
+		<item name="android:editTextStyle">@style/VdTextBlack</item>
+	</style>
+
+</resources>
